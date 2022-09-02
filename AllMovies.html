@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+Hotstar</title>
+    <link rel="stylesheet" href="./disney.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+            alt="">
+        <ul class="nav-links">
+            <li class="nav-items"><a href="#">TV</a></li>
+            <li class="nav-items"><a href="#">Movies</a></li>
+            <li class="nav-items"><a href="#">Sports</a></li>
+            <li class="nav-items"><a href="#">Disney+</a></li>
+        </ul>
+
+        <div class="right-container">
+            <input type="text" class="search-box" placeholder="search">
+            <button class="button">subscribe</button>
+            <a href="#" class="login">login</a>
+        </div>
+    </nav>
+
+    <div>
+        <div class="container">
+            <select id="typeOfMovies" onchange="onMovieTypeChange()">
+                <option value="Bollywood">Bollywood</option>
+                <option value="Hollywood">Hollywood</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <h1>best</h1>
+                <ul id="movieList"></ul>
+            </div>
+        </div>
+
+        <script src="./allMovies.js"></script>
+</body>
+
+</html>

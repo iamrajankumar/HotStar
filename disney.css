@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    background-color: black;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+
+}
+.navbar{
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background: #0c111b;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items a{
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: aliceblue;
+
+}
+
+.right-container{
+    display: block;
+    margin-left: auto;
+}
+.search-box{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: aliceblue;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.search-box:focus{
+    width: 400px;
+    border-color: red;
+}
+
+.button{
+    background: rgb(0, 140, 255);
+    height: 30px;
+    padding: 0 20px;
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 28px;
+}
+.login{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: red;
+
+
+}
+
+
+
+
+
+
+.slide-Container {
+
+    position: relative;
+    width: 100%;
+
+}
+
+.slide img {
+
+    width: 100%;
+    height: 500px;
+
+
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    color: black;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+
+}
+
+
+
+
+.slide {
+    display: none;
+}
+
+
+.container{
+    width: 200px;
+    position: relative;
+    -ms-flex-align: end;
+    margin-left: 86%;
+
+}
+
+.click{
+    background-color: brown;
+    border-radius: 20px;
+}
+
+.click:hover{
+    background-color: green;
+}
+
+.click, .links{
+    padding: 12;
+    font-size: 1.2em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    width: 200px;
+    color: white;
+    transition: 0.3s;
+}
+
+.list{
+    position: absolute;
+    transform:scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+
+}
+
+.newlist{
+    transform: scaleY(1);
+}
+
+.links{
+    background-color: black;
+}
+
+.links:hover{
+    background-color: rgb(83, 83, 200);
+    transform: scale(1.1);
+}
+
+
+
+
+
+#movieList{
+    display: flex;
+    color: aliceblue;
+}
+
+#movieList .movie {
+    margin: 15px;
+
+}
+
+#movieList .movie-img {
+    height: 250px;
+}
+
+#movieList .movie-img img {
+    height: 100%;
+    border-radius: 15px;
+}
+
+#movieList .movie-img img:hover{
+    transform: scale(1.1);
+}
+
+#movieList .movie-name {
+    color: aliceblue;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ /* .Recommended {
+    color: aliceblue;
+    padding-top: 100px;
+} */
+
+ #shows {
+    display: flex;
+    color: aliceblue;
+    margin-top: 53px;
+}
+
+#shows .movie-show {
+    margin: 15px;
+
+}
+
+#shows .show-img {
+    height: 250px;
+}
+
+#shows .show-img img {
+    height: 100%;
+    border-radius: 15px;
+}
+
+#shows .show-img img:hover{
+    transform: scale(1.1);
+}
+
+.show-name {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#shows .show-names {
+    padding-top: 60px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* .head{
+    color: aliceblue;
+} */
+#Popular-Movies{
+    display: flex;
+}
+
+#Popular-Movies .Popular-Movie{
+    margin: 15px;
+}
+
+#Popular-Movies .popular-img{
+    height: 250px;
+}
+
+#Popular-Movies .popular-img img{
+    height: 100%;
+    border-radius: 15px;
+}
+
+ .popular-name{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+ .populars-name{
+    padding-top: 60px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Popular-Movies .popular-img img:hover{
+     transform: scale(1.1);
+}
+
+#foreign{
+    display: flex;
+    color: aliceblue;
+}
+
+#foreign .foreign-Movie{
+    margin: 15px;
+}
+
+#foreign .foreign-img{
+    height: 250px;
+}
+
+#foreign .foreign-img img{
+    height: 100%;
+    border-radius: 15px;
+}
+
+.foreigns-name{
+    padding-top: 60px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.foreign-name{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
